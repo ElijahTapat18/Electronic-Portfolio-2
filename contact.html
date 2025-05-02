@@ -3,181 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Portfolio</title>
+    <title>Student Portfolio - Contact</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Dropdown Navigation -->
     <header>
         <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">My Portfolio</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="academics.html">Academics & Experience</a>
-                            <div class="dropdown-content">
-                                <a href="academics.html#education">Education</a>
-                                <a href="academics.html#experience">Work Experience</a>
-                                <a href="academics.html#certifications">Certifications</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="skills.html">Skills & Projects</a>
-                            <div class="dropdown-content">
-                                <a href="skills.html#technical">Technical Skills</a>
-                                <a href="skills.html#soft">Soft Skills</a>
-                                <a href="skills.html#projects">Projects</a>
-                            </div>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics & Experiences</a></li>
+                    <li><a href="skills.html">Skills & Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
         </div>
     </header>
 
-    <!-- Page Title -->
-    <section class="hero" style="height: 30vh;">
-        <h1>Contact Me</h1>
-        <p>Let's connect and discuss your project</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+    <main class="container">
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>Feel free to reach out to me through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <h3>Get In Touch</h3>
+                    <p>
+                        I'm always interested in new opportunities and connections. Feel free to reach out to me using the contact form or through my social media profiles.
+                    </p>
+                    <p>
+                        <strong>Email:</strong> your.email@example.com
+                    </p>
+                    <p>
+                        <strong>Location:</strong> Your City, State
+                    </p>
                     
-                    <div class="info-item">
-                        <i>📧</i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>your.email@example.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i>📱</i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+1 (123) 456-7890</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i>📍</i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>City, State, Country</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i>🔗</i>
-                        <div>
-                            <h4>Social Media</h4>
-                            <p>
-                                <a href="#" style="margin-right: 10px;">LinkedIn</a>
-                                <a href="#" style="margin-right: 10px;">GitHub</a>
-                                <a href="#">Twitter</a>
-                            </p>
-                        </div>
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn">Li</a>
+                        <a href="#" title="GitHub">Gh</a>
+                        <a href="#" title="Instagram">In</a>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <h3>Send Me a Message</h3>
-                    <form action="#" method="POST">
+                    <form>
                         <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" class="form-control" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
                         </div>
                         
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Availability Section -->
-    <section class="section" style="background-color: #f9f9f9;">
-        <div class="container">
-            <h2 class="section-title">Availability</h2>
-            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p>I am currently available for freelance work, part-time positions, and consulting opportunities. My typical response time to messages is within 24-48 hours.</p>
-                
-                <div style="margin-top: 30px;">
-                    <h3>Preferred Project Types</h3>
-                    <p>Web Development • Mobile Applications • UI/UX Design • Data Analysis • Technical Writing</p>
-                </div>
-                
-                <div style="margin-top: 30px;">
-                    <h3>Working Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 5:00 PM (Eastern Time)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section (Placeholder) -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">My Location</h2>
-            <div style="height: 400px; background-color: #eee; display: flex; justify-content: center; align-items: center; border-radius: 10px;">
-                <p>Map Placeholder - You would replace this with an actual map integration</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to start a project?</h2>
-            <p>Let's bring your ideas to life with collaborative and innovative solutions.</p>
-            <a href="#" class="cta-btn">Schedule a Call</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="academics.html">Academics & Experience</a>
-                <a href="skills.html">Skills & Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="social-icons">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
-            <div class="copyright">
-                &copy; 2025 My Portfolio. All Rights Reserved.
-            </div>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
