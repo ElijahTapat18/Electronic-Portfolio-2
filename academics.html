@@ -3,174 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics & Experience - My Portfolio</title>
+    <title>Student Portfolio - Academics & Experiences</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Dropdown Navigation -->
     <header>
         <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">My Portfolio</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="academics.html">Academics & Experience</a>
-                            <div class="dropdown-content">
-                                <a href="#education">Education</a>
-                                <a href="#experience">Work Experience</a>
-                                <a href="#certifications">Certifications</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="skills.html">Skills & Projects</a>
-                            <div class="dropdown-content">
-                                <a href="skills.html#technical">Technical Skills</a>
-                                <a href="skills.html#soft">Soft Skills</a>
-                                <a href="skills.html#projects">Projects</a>
-                            </div>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html" class="active">Academics & Experiences</a></li>
+                    <li><a href="skills.html">Skills & Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
         </div>
     </header>
 
-    <!-- Page Title -->
-    <section class="hero" style="height: 30vh;">
-        <h1>Academics & Experience</h1>
-        <p>My educational background and professional journey</p>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Master's Degree</h3>
-                        <h4>University Name</h4>
-                        <p class="date">2020 - 2022</p>
-                        <p>Describe your degree, major coursework, and any notable achievements or projects during this period. Add any relevant details about your academic performance, scholarships, or leadership roles.</p>
+    <main class="container">
+        <!-- Academics & Experiences Section -->
+        <section id="academics">
+            <h2 class="section-title">Academics & Experiences</h2>
+            
+            <div class="about-content">
+                <h3>Education</h3>
+                <p>
+                    Currently attending [Your High School Name], where I maintain a [Your GPA] GPA and participate in various academic clubs and activities.
+                </p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h4>[Your High School Name]</h4>
+                        <p>High School Diploma (Expected graduation: 2025)</p>
+                        <p>Relevant coursework: [List key courses]</p>
                     </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Bachelor's Degree</h3>
-                        <h4>University Name</h4>
-                        <p class="date">2016 - 2020</p>
-                        <p>Describe your degree, major coursework, and any notable achievements or projects during this period. Add any relevant details about your academic performance, scholarships, or leadership roles.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>High School Diploma</h3>
-                        <h4>School Name</h4>
-                        <p class="date">2012 - 2016</p>
-                        <p>Highlight your academic focus, achievements, and any extracurricular activities that contributed to your personal and professional development.</p>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">2019 - 2022</span>
+                        <h4>[Your Middle School Name]</h4>
+                        <p>Middle School Education</p>
+                        <p>Highlights: [Any achievements or activities]</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Work Experience Section -->
-    <section id="experience" class="section" style="background-color: #f9f9f9;">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Current Position</h3>
-                        <h4>Company Name</h4>
-                        <p class="date">2022 - Present</p>
-                        <p>Describe your role, responsibilities, and key achievements. Focus on quantifiable results and the impact of your work on the organization. Highlight any leadership roles, special projects, or innovations you contributed to.</p>
+            
+            <div class="about-content">
+                <h3>Extracurricular Activities</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h4>[Club or Activity Name]</h4>
+                        <p>[Your role] - [Brief description of your responsibilities and accomplishments]</p>
                     </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Previous Position</h3>
-                        <h4>Company Name</h4>
-                        <p class="date">2020 - 2022</p>
-                        <p>Describe your role, responsibilities, and key achievements. Focus on quantifiable results and the impact of your work on the organization. Highlight any leadership roles, special projects, or innovations you contributed to.</p>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h4>[Sports Team or Other Activity]</h4>
+                        <p>[Your position] - [Brief description]</p>
                     </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Internship</h3>
-                        <h4>Company Name</h4>
-                        <p class="date">Summer 2019</p>
-                        <p>Outline what you learned during this experience, the projects you worked on, and how it contributed to your professional development. Mention any recognition or permanent job offers that resulted from your internship.</p>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">Summer 2023</span>
+                        <h4>[Volunteer Experience or Summer Program]</h4>
+                        <p>[Brief description of what you did and learned]</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2 class="section-title">Certifications & Training</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Certification Name</h3>
-                        <h4>Issuing Organization</h4>
-                        <p class="date">Issued: January 2023</p>
-                        <p>Brief description of what this certification entails and how it has enhanced your professional capabilities.</p>
+            
+            <div class="about-content">
+                <h3>Awards & Achievements</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-date">2024</span>
+                        <h4>[Award or Achievement Name]</h4>
+                        <p>[Brief description]</p>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Certification Name</h3>
-                        <h4>Issuing Organization</h4>
-                        <p class="date">Issued: June 2022</p>
-                        <p>Brief description of what this certification entails and how it has enhanced your professional capabilities.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Certification Name</h3>
-                        <h4>Issuing Organization</h4>
-                        <p class="date">Issued: March 2021</p>
-                        <p>Brief description of what this certification entails and how it has enhanced your professional capabilities.</p>
+                    
+                    <div class="timeline-item">
+                        <span class="timeline-date">2023</span>
+                        <h4>[Award or Achievement Name]</h4>
+                        <p>[Brief description]</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container">
-            <h2>Check out my skills and projects</h2>
-            <p>See how my education and experience have translated into practical skills and real-world projects.</p>
-            <a href="skills.html" class="cta-btn">View Skills & Projects</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="academics.html">Academics & Experience</a>
-                <a href="skills.html">Skills & Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="social-icons">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
-            <div class="copyright">
-                &copy; 2025 My Portfolio. All Rights Reserved.
-            </div>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
