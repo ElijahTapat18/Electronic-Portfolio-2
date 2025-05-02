@@ -3,339 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills & Projects - My Portfolio</title>
+    <title>Student Portfolio - Skills & Projects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Dropdown Navigation -->
     <header>
         <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">My Portfolio</a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="academics.html">Academics & Experience</a>
-                            <div class="dropdown-content">
-                                <a href="academics.html#education">Education</a>
-                                <a href="academics.html#experience">Work Experience</a>
-                                <a href="academics.html#certifications">Certifications</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="skills.html">Skills & Projects</a>
-                            <div class="dropdown-content">
-                                <a href="#technical">Technical Skills</a>
-                                <a href="#soft">Soft Skills</a>
-                                <a href="#projects">Projects</a>
-                            </div>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics & Experiences</a></li>
+                    <li><a href="skills.html" class="active">Skills & Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
         </div>
     </header>
 
-    <!-- Page Title -->
-    <section class="hero" style="height: 30vh;">
-        <h1>Skills & Projects</h1>
-        <p>My technical expertise and portfolio of work</p>
-    </section>
-
-    <!-- Technical Skills Section -->
-    <section id="technical" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+    <main class="container">
+        <!-- Skills & Projects Section -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div>
-                        <p>JavaScript</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 90%;">
-                                <span class="skill-percent">90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Python</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 85%;">
-                                <span class="skill-percent">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Java</p>
-                        <div class="skill-bar">
-                        <div class="skill-fill" style="width: 75%;">
-                                <span class="skill-percent">75%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Academic Skills</h3>
+                    <ul class="skill-list">
+                        <li>Research and Analysis</li>
+                        <li>Critical Thinking</li>
+                        <li>Problem Solving</li>
+                        <li>Scientific Method</li>
+                        <li>Mathematical Reasoning</li>
+                    </ul>
                 </div>
+                
                 <div class="skill-category">
-                    <h3>Web Development</h3>
-                    <div>
-                        <p>HTML/CSS</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 95%;">
-                                <span class="skill-percent">95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>React</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 80%;">
-                                <span class="skill-percent">80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Node.js</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 70%;">
-                                <span class="skill-percent">70%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                        <li>Google Workspace</li>
+                        <li>Basic Web Development (HTML, CSS)</li>
+                        <li>Programming (e.g., Python, JavaScript)</li>
+                        <li>Graphic Design</li>
+                    </ul>
                 </div>
+                
                 <div class="skill-category">
-                    <h3>Data & Analytics</h3>
-                    <div>
-                        <p>SQL</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 85%;">
-                                <span class="skill-percent">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Data Visualization</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 75%;">
-                                <span class="skill-percent">75%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Machine Learning</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 60%;">
-                                <span class="skill-percent">60%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Communication</li>
+                        <li>Leadership</li>
+                        <li>Teamwork</li>
+                        <li>Time Management</li>
+                        <li>Public Speaking</li>
+                    </ul>
                 </div>
+                
                 <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div>
-                        <p>Git/GitHub</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 90%;">
-                                <span class="skill-percent">90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Docker</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 65%;">
-                                <span class="skill-percent">65%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>AWS</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 70%;">
-                                <span class="skill-percent">70%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li>English (Native)</li>
+                        <li>[Second Language] (Proficient/Intermediate/Basic)</li>
+                        <li>[Third Language] (Basic)</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Soft Skills Section -->
-    <section id="soft" class="section" style="background-color: #f9f9f9;">
-        <div class="container">
-            <h2 class="section-title">Soft Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Communication</h3>
-                    <div>
-                        <p>Written Communication</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 90%;">
-                                <span class="skill-percent">90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Public Speaking</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 80%;">
-                                <span class="skill-percent">80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Leadership</h3>
-                    <div>
-                        <p>Team Management</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 85%;">
-                                <span class="skill-percent">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Decision Making</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 80%;">
-                                <span class="skill-percent">80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Problem Solving</h3>
-                    <div>
-                        <p>Critical Thinking</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 90%;">
-                                <span class="skill-percent">90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Creativity</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 85%;">
-                                <span class="skill-percent">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Interpersonal</h3>
-                    <div>
-                        <p>Collaboration</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 95%;">
-                                <span class="skill-percent">95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Adaptability</p>
-                        <div class="skill-bar">
-                            <div class="skill-fill" style="width: 85%;">
-                                <span class="skill-percent">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-gallery">
+            
+            <h2 class="section-title" style="margin-top: 3rem;">Projects</h2>
+            
+            <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-img" style="background-image: url('/api/placeholder/400/250');"></div>
-                    <div class="project-content">
-                        <h3>Project One</h3>
-                        <p>Detailed description of the project, including the problem it solves, technologies used, your role in development, and the outcome.</p>
-                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React</p>
+                    <div class="project-img">Project Image Placeholder</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Science Fair Project</h3>
+                        <div class="project-tags">
+                            <span class="tag">Science</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">Biology</span>
+                        </div>
+                        <p>
+                            A brief description of your science fair project, including your hypothesis, methodology, and results.
+                        </p>
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <div class="project-img" style="background-image: url('/api/placeholder/400/250');"></div>
-                    <div class="project-content">
-                        <h3>Project Two</h3>
-                        <p>Detailed description of the project, including the problem it solves, technologies used, your role in development, and the outcome.</p>
-                        <p><strong>Technologies:</strong> Python, Django, PostgreSQL</p>
+                    <div class="project-img">Project Image Placeholder</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Creative Writing Portfolio</h3>
+                        <div class="project-tags">
+                            <span class="tag">Writing</span>
+                            <span class="tag">Literature</span>
+                            <span class="tag">Creativity</span>
+                        </div>
+                        <p>
+                            A collection of your best creative writing pieces, including short stories, poems, or essays.
+                        </p>
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <div class="project-img" style="background-image: url('/api/placeholder/400/250');"></div>
-                    <div class="project-content">
-                        <h3>Project Three</h3>
-                        <p>Detailed description of the project, including the problem it solves, technologies used, your role in development, and the outcome.</p>
-                        <p><strong>Technologies:</strong> Node.js, Express, MongoDB</p>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('/api/placeholder/400/250');"></div>
-                    <div class="project-content">
-                        <h3>Project Four</h3>
-                        <p>Detailed description of the project, including the problem it solves, technologies used, your role in development, and the outcome.</p>
-                        <p><strong>Technologies:</strong> Java, Spring Boot, MySQL</p>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('/api/placeholder/400/250');"></div>
-                    <div class="project-content">
-                        <h3>Project Five</h3>
-                        <p>Detailed description of the project, including the problem it solves, technologies used, your role in development, and the outcome.</p>
-                        <p><strong>Technologies:</strong> React Native, Firebase</p>
-                        <a href="#" class="btn">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img" style="background-image: url('/api/placeholder/400/250');"></div>
-                    <div class="project-content">
-                        <h3>Project Six</h3>
-                        <p>Detailed description of the project, including the problem it solves, technologies used, your role in development, and the outcome.</p>
-                        <p><strong>Technologies:</strong> Vue.js, Vuex, Tailwind CSS</p>
+                    <div class="project-img">Project Image Placeholder</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Community Service Initiative</h3>
+                        <div class="project-tags">
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Community</span>
+                            <span class="tag">Service</span>
+                        </div>
+                        <p>
+                            Details about a community service project you initiated or participated in, including your role and impact.
+                        </p>
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container">
-            <h2>Like what you see?</h2>
-            <p>Let's discuss how my skills and experience can contribute to your next project.</p>
-            <a href="contact.html" class="cta-btn">Contact Me</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="academics.html">Academics & Experience</a>
-                <a href="skills.html">Skills & Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="social-icons">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
-            <div class="copyright">
-                &copy; 2025 My Portfolio. All Rights Reserved.
-            </div>
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
         </div>
     </footer>
-                
+
+    <script src="script.js"></script>
+</body>
+</html>
