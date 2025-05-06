@@ -454,3 +454,33 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.subheading {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.custom-list li {
+    position: relative;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    color: var(--dark-color);
+}
+
+.custom-list li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1;
+}
